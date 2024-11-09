@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "vite build",
+    "build": "next build",  // Alterado para usar Next.js para build
+    "start": "next start",   // Adicionado para iniciar a aplicação
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview" // Se você ainda quiser usar Vite para preview
   },
   "dependencies": {
     "axios": "^1.7.7",
