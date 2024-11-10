@@ -503,8 +503,8 @@ const Type = styled.span`
 
 // SVG da Pokébola
 const PokeballSVG = styled.svg`
-  width: 10vw;
-  height: 10vw;
+  width: 10%;
+  height: 4%;
   margin: 20px auto;
   fill: none;
   stroke: #d32f2f;
