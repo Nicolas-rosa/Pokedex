@@ -294,7 +294,7 @@ function App() {
         <GlobalStyle theme={themes[theme]} />
         <Card theme={themes[theme]}>
         <Pokeball />
-          <Title theme={themes[theme]}>Pokédex</Title>
+          <Title theme={themes[theme]}>Pokedex</Title>
          
           <SearchContainer>
             <SearchInput
