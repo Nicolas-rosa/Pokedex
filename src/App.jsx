@@ -83,52 +83,6 @@ const themes = {
       fighting: 'orange',
     },
   },
-  retro: {
-    background: 'linear-gradient(to bottom, #f0e68c, #fff5b7)', // Gradiente de fundo amarelo claro
-    color: '#333', // Texto escuro
-    cardBackground: '#fff5b7', // Fundo do card amarelo claro
-    borderColor: '#d1c7a6', // Borda do card amarelo claro
-    titleColor: '#5c4d2d', // Título marrom escuro
-    typeBackground: {
-      grass: '#78C850',
-      fire: '#F08030',
-      water: '#6890F0',
-      poison: '#4a00f8',
-      bug: '#fad327',
-      ghost: '#cc00ff',
-      flying: '#009da8',
-      ground: '#8d5000',
-      rock: '#0000009f',
-      normal: '#0000009f',
-      ice: '#00f7ff',
-      psychic: '#001aff',
-      electric: '#fffc47',
-      fighting: 'orange',
-    },
-  },
-  ocean: {
-    background: 'linear-gradient(to bottom, #0077be, #005f8c)', // Gradiente de fundo azul escuro
-    color: '#fff', // Texto branco
-    cardBackground: '#005f8c', // Fundo do card azul escuro
-    borderColor: '#003f5c', // Borda do card azul escuro
-    titleColor: '#00bfff', // Título azul claro
-    typeBackground: {
-      grass: '#78C850',
-      fire: '#F08030',
-      water: '#6890F0',
-      poison: '#4a00f8',
-      bug: '#fad327',
-      ghost: '#cc00ff',
-      flying: '#009da8',
-      ground: '#8d5000',
-      rock: '#0000009f',
-      normal: '#0000009f',
-      ice: '#00f7ff',
-      psychic: '#001aff',
-      electric: '#fffc47',
-      fighting: 'orange',
-    },
-  },
 };
 
 // Emojis para cada tema
@@ -136,8 +90,6 @@ const themeEmojis = {
   light: '☀️',
   dark: '🌙',
   cyberpunk: '🤖',
-  retro: '🎮',
-  ocean: '🌊',
 };
 
 // Função para categorizar Pokémons por tipo
@@ -218,16 +170,8 @@ function App() {
         body.classList.remove('dark-theme');
         body.classList.add('cyberpunk-theme');
         return 'cyberpunk';
-      } else if (prevTheme === 'cyberpunk') {
-        body.classList.remove('cyberpunk-theme');
-        body.classList.add('retro-theme');
-        return 'retro';
-      } else if (prevTheme === 'retro') {
-        body.classList.remove('retro-theme');
-        body.classList.add('ocean-theme');
-        return 'ocean';
       } else {
-        body.classList.remove('ocean-theme')
+        body.classList.remove('cyberpunk-theme')
          return 'light';
       }
     });
